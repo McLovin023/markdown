@@ -30,8 +30,8 @@ artiiculos_oficina.shift();
 //eliminar el ultimo 
 artiiculos_oficina.pop();
 
-//eliminar posicion espedifica
-artiiculos_oficina.splice(5,1);
+//eliminar posicion especifica
+artiiculos_oficina.splice(5,2);
 
 
 //objetos
