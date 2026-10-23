@@ -59,4 +59,4 @@ let oficina = {
 };
 
 console.log(oficina);
-
+console.log(oficina.departamento.articulos.length + " total articulos")
