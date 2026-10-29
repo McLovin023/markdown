@@ -75,7 +75,7 @@ console.log(nombre.includes("Carlos"));
 //usando if y else
 
 
-let mensaje = "Hola, bienvenido a JavaScript";
+let mensaje = "Hola, bienvenido a CSS";
 
 if (mensaje.includes("JavaScript")) {
     console.log("La palabra sí existe");
@@ -103,3 +103,19 @@ console.log(texto.includes("hola")); // false
 let texto1= "Hola Mundo";
 
 console.log(texto1.toLowerCase().includes("hola"));
+
+
+//metodos de string
+
+//startWith
+const archivo = "informe.pdf"
+
+const empiezaCorrectamente = archivo.startsWith("informe");
+
+const esPdf = archivo.endsWith(".pdf")
+
+console.log("¿empieza con informe?", empiezaCorrectamente);
+console.log( "termina en .pdf", esPdf);
+
+//metodo trim
+let nombre3
