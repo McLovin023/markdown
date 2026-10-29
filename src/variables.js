@@ -60,3 +60,46 @@ let oficina = {
 
 console.log(oficina);
 console.log(oficina.departamento.articulos.length + " total articulos")
+
+
+//metodo include en strings
+
+let nombre = "Simon Andres";
+
+console.log(nombre.includes("Simon")  + " si esta Simon en la linea ");
+
+// metodo falso
+
+console.log(nombre.includes("Carlos"));
+
+//usando if y else
+
+
+let mensaje = "Hola, bienvenido a JavaScript";
+
+if (mensaje.includes("JavaScript")) {
+    console.log("La palabra sí existe");
+} else {
+    console.log("La palabra no existe");
+}
+
+// tambien funciona con letras 
+
+let palabra = "computador";
+
+console.log(palabra.includes("puta"));
+console.log(palabra.includes("com"));
+console.log(palabra.includes("z"));
+
+//distingue mayusculas y minisculas
+
+let texto = "Hola Mundo";
+
+console.log(texto.includes("Hola")); // true
+console.log(texto.includes("hola")); // false
+
+//ignorar mayusculas
+
+let texto1= "Hola Mundo";
+
+console.log(texto1.toLowerCase().includes("hola"));
