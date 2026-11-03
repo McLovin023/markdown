@@ -103,3 +103,18 @@ const preciopimiento = Number(inventario.vegetales_y_demas[8].split(":")[1].trim
 
 const total = precioEscoba + preciotrapeador + preciodetergente + precioesponja + precioarroz + preciofrijoles + preciopasta + precioharina + preciotomate + preciocebolla + preciozanahoria + preciopapa + preciopimiento;
 console.log("el total de tu compra es = " + total + " $");
+
+// En la consola de DevTools, escribe por ejemplo: calcularCambio(2000)
+window.calcularCambio = function (pago) {
+  pago = Number(pago);
+
+  if (!Number.isFinite(pago) || pago < total) {
+    console.log("Ingresa un pago válido que sea igual o mayor al total de " + total + " $.");
+    return;
+  }
+
+  const cambio = pago - total;
+  console.log("Cambio:", cambio, "$");
+};
+
+console.log("Para calcular el cambio, escribe en la consola: calcularCambio(monto)");
